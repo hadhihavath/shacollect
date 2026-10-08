@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1012136392195",
+    "project_id": "sha-collect",
+    "storage_bucket": "sha-collect.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012136392195:android:85b2648f588f71c6438036",
+        "android_client_info": {
+          "package_name": "com.havath.shacollect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012136392195-6oqq6hf2i87o3ckhr100agukrehm98bj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.havath.shacollect",
+            "certificate_hash": "9bd8edecc9515758f76890e99e9a32a502f3d1e4"
+          }
+        },
+        {
+          "client_id": "1012136392195-0bbej9gvjimmot001csam0uqoes1t3g6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCobSByfqMkv2QdqFSjoVRSWXKhUj8VXV8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012136392195-0bbej9gvjimmot001csam0uqoes1t3g6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
