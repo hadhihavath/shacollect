@@ -53,3 +53,7 @@ app.*.map.json
 *.jks
 key.properties
 
+# Deployment archives
+*.zip
+
+
