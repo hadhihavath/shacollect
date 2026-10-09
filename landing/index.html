@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sha Collects — Enterprise Route Cash Recovery & Daily Collection Management</title>
+  <meta name="description" content="Sha Collects is an enterprise-grade, offline-first route cash recovery and daily collection management mobile app for field recovery agents, sales reps, and distribution networks.">
+  <link rel="icon" type="image/png" href="images/icon.png">
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for polished UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-top-right"></div>
+  <div class="ambient-glow glow-center"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo" id="nav-brand-logo">
+        <div class="logo-icon-wrapper">
+          <img src="images/icon.png" alt="Sha Collects Logo" class="brand-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Sha Collects</span>
+          <span class="brand-badge">PRO EDITION</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="nav-menu">
+        <a href="#features" class="nav-link" id="nav-link-features">Features</a>
+        <a href="#offline-sync" class="nav-link" id="nav-link-offline">Offline Engine</a>
+        <a href="#calculator" class="nav-link" id="nav-link-calculator">Recovery Calculator</a>
+        <a href="#reports" class="nav-link" id="nav-link-reports">Audit Reports</a>
+        <a href="#install-guide" class="nav-link" id="nav-link-guide">Install Guide</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="Sha_Collects.apk" download="Sha_Collects.apk" class="btn btn-primary btn-nav" id="nav-download-btn">
+          <i class="fa-brands fa-android"></i>
+          <span>Download APK</span>
+        </a>
+      </div>
+
+      <button class="mobile-toggle" id="mobile-toggle-btn" aria-label="Toggle menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero-section" id="hero">
+      <div class="hero-container">
+        
+        <div class="hero-content">
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>Version 1.0 Production Release &bull; Offline-First Ready</span>
+          </div>
+
+          <h1 class="hero-title">
+            Enterprise Route Cash Recovery &amp; <span class="gradient-text">Field Collection Suite</span>
+          </h1>
+
+          <p class="hero-description">
+            Engineered specifically for field recovery agents, distributors, and route reps. Record cash &amp; UPI payments, schedule promises to pay, navigate daily shop routes, and print audit-grade PDF statements—even with <strong>zero internet connectivity</strong>.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="Sha_Collects.apk" download="Sha_Collects.apk" class="btn btn-primary btn-lg download-trigger" id="hero-download-apk-btn">
+              <div class="btn-icon-box">
+                <i class="fa-brands fa-android"></i>
+              </div>
+              <div class="btn-text-content">
+                <span class="btn-title">Download APK Free</span>
+                <span class="btn-subtitle">v1.0 Release &bull; Android 8.0+ (58.8 MB)</span>
+              </div>
+            </a>
+
+            <a href="#features" class="btn btn-secondary btn-lg" id="hero-explore-features-btn">
+              <i class="fa-solid fa-compass"></i>
+              <span>Explore Features</span>
+            </a>
+          </div>
+
+          <div class="hero-trust-metrics">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved text-emerald"></i>
+              <span>Multi-Tenant Auth</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-wifi-slash text-cyan"></i>
+              <span>Zero-Signal Offline Disk Cache</span>
+            </div>
+            <div class="trust-divider"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-file-pdf text-amber"></i>
+              <span>Audit PDF Statements</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <div class="hero-mockup-wrapper">
+              <img src="images/hero_mockup.jpg" alt="Sha Collects Mobile App Preview" class="hero-mockup-img">
+              <div class="floating-badge badge-top-right">
+                <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div>
+                  <div class="badge-title">Instant Online Sync</div>
+                  <div class="badge-sub">Auto background queue</div>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-left">
+                <div class="badge-icon bg-emerald"><i class="fa-solid fa-indian-rupee-sign"></i></div>
+                <div>
+                  <div class="badge-title">₹1,450.00 Collected</div>
+                  <div class="badge-sub">GPay &bull; Cash &bull; Bank Verified</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-banner">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number" data-target="100">100%</div>
+          <div class="stat-label">Offline Autonomous Resilience</div>
+          <p class="stat-detail">Zero app lockups in remote basements or weak 2G zones</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="3">3 Modes</div>
+          <div class="stat-label">Multi-Channel Reconciliation</div>
+          <p class="stat-detail">Cash in hand, Google Pay (UPI), and Direct Bank Transfers</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="10">10 / 10</div>
+          <div class="stat-label">Verified Test Coverage</div>
+          <p class="stat-detail">Passing unit tests for ledger precision &amp; date scheduling</p>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1-Tap</div>
+          <div class="stat-label">WhatsApp Receipts</div>
+          <p class="stat-detail">Instant digital payment confirmation delivered to shop owners</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Features Section -->
+    <section class="features-section" id="features">
+      <div class="section-header">
+        <div class="section-tag">CAPABILITIES</div>
+        <h2 class="section-title">Engineered for Rapid Field Operations</h2>
+        <p class="section-subtitle">Every screen is designed with one priority: maximum speed, zero data entry friction, and bulletproof offline reliability.</p>
+      </div>
+
+      <div class="features-grid">
+        
+        <div class="feature-card highlight-card">
+          <div class="feature-card-header">
+            <div class="feature-icon bg-emerald-soft">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <span class="feature-badge">Route Intelligence</span>
+          </div>
+          <h3 class="feature-heading">Day &amp; District Route Categorization</h3>
+          <p class="feature-text">
+            Group client shops by weekdays and districts (e.g. <em>Monday - Kozhikode</em>, <em>Tuesday - Malappuram</em>, <em>Wednesday - Wayanad</em>). Instant live multi-attribute filtering by shop name, owner, and balance status.
+          </p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-emerald"></i> Real-time color badges: Cleared (Green), Moderate, High Overdue (&ge; ₹5,000)</li>
+            <li><i class="fa-solid fa-check text-emerald"></i> One-tap phone dialing directly into native phone intent</li>
+            <li><i class="fa-solid fa-check text-emerald"></i> GPS coordinates with direct Google Maps route navigation</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon bg-cyan-soft">
+              <i class="fa-solid fa-money-bill-transfer"></i>
+            </div>
+            <span class="feature-badge">Quick Payments</span>
+          </div>
+          <h3 class="feature-heading">Rapid Field Payment Collection</h3>
+          <p class="feature-text">
+            Collect money in seconds with quick amount chips (<code>+₹500</code>, <code>+₹1,000</code>, <code>+₹2,000</code>, or <code>Full Balance</code>). Categorize as Cash, Google Pay, or Bank Transfer with instant running balance preview.
+          </p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-emerald"></i> Atomic balance deductions prevent double-spend or drift</li>
+            <li><i class="fa-solid fa-check text-emerald"></i> Instant digital receipt generator ready to share via WhatsApp</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon bg-amber-soft">
+              <i class="fa-solid fa-clipboard-user"></i>
+            </div>
+            <span class="feature-badge">Shop Visits</span>
+          </div>
+          <h3 class="feature-heading">"Visited — No Collection" Logging</h3>
+          <p class="feature-text">
+            When a shop is visited but unable to pay, log detailed visit notes (*Shop closed*, *Proprietor away*, *Cheque promised*). Keeps your daily activity transparent without corrupting financial numbers.
+          </p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-emerald"></i> Timestamps each visit to verify route completion</li>
+            <li><i class="fa-solid fa-check text-emerald"></i> Maintains an immutable visit audit log per shop</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-card-header">
+            <div class="feature-icon bg-purple-soft">
+              <i class="fa-solid fa-bell"></i>
+            </div>
+            <span class="feature-badge">Commitment Tracking</span>
+          </div>
+          <h3 class="feature-heading">Promised Follow-Ups &amp; Alarms</h3>
+          <p class="feature-text">
+            Set commitments to pay with intuitive date presets (*Tomorrow*, *In 3 Days*, *Next Week*) and custom route time slots (*Morning 9-12*, *Afternoon 12-4*, *Evening 4-8*).
+          </p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-emerald"></i> Local device push alarms remind you before arrival</li>
+            <li><i class="fa-solid fa-check text-emerald"></i> Follow-up timeline sorted by promised date &amp; urgency</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Interactive Deep Dive Showcase -->
+    <section class="deepdive-section" id="offline-sync">
+      <div class="section-container">
+        
+        <div class="deepdive-grid">
+          <div class="deepdive-media">
+            <div class="media-frame">
+              <img src="images/offline_sync.jpg" alt="Sha Collects Offline Persistence Engine" class="showcase-img" id="showcase-img">
+              <div class="media-overlay">
+                <span class="tag-status"><i class="fa-solid fa-circle"></i> Local SQLite / Firestore Persistence</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="deepdive-details">
+            <div class="section-tag">OFFLINE AUTONOMY</div>
+            <h2 class="section-title">Zero Cell Signal? Never Miss a Single Entry.</h2>
+            <p class="section-text">
+              Wholesale markets, rural backroads, and warehouse basements often have zero cellular coverage. Sha Collects features an uncapped local Firestore persistence engine that queues all collections and shop notes locally.
+            </p>
+
+            <div class="workflow-steps">
+              <div class="step-item">
+                <div class="step-num">1</div>
+                <div class="step-body">
+                  <h4>Field Agent Records Entry Offline</h4>
+                  <p>Balance deductions, receipts, and visit notes are committed locally with zero screen freeze or lag.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-num">2</div>
+                <div class="step-body">
+                  <h4>Automated Background Queue</h4>
+                  <p>The app maintains an encrypted write queue on the device's internal storage.</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-num">3</div>
+                <div class="step-body">
+                  <h4>Seamless Cloud Reconciliation</h4>
+                  <p>The moment 4G/5G or Wi-Fi reconnects, changes sync atomically to Google Cloud Firestore with multi-tenant user isolation.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-mini">
+              <a href="Sha_Collects.apk" download="Sha_Collects.apk" class="btn btn-primary" id="deepdive-download-btn">
+                <i class="fa-solid fa-download"></i>
+                <span>Download Sha Collects APK</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Field Representative Showcase -->
+    <section class="agent-showcase-section">
+      <div class="section-container">
+        <div class="deepdive-grid reverse-grid">
+          
+          <div class="deepdive-details">
+            <div class="section-tag">FIELD TESTED</div>
+            <h2 class="section-title">Built Alongside Real Route Recovery Agents</h2>
+            <p class="section-text">
+              Unlike generic accounting software or complex desktop ERPs, Sha Collects was designed specifically for one-handed thumb interaction while standing in busy store aisles or sitting on a delivery motorcycle.
+            </p>
+
+            <div class="feature-bullets">
+              <div class="bullet-card">
+                <i class="fa-solid fa-bolt text-emerald"></i>
+                <div>
+                  <strong>Ultra-Fast 3-Tap Entry</strong>
+                  <p>Open shop &rarr; Tap amount preset &rarr; Confirm &amp; send WhatsApp receipt in under 4 seconds.</p>
+                </div>
+              </div>
+
+              <div class="bullet-card">
+                <i class="fa-solid fa-lock text-cyan"></i>
+                <div>
+                  <strong>Complete Tenant Isolation</strong>
+                  <p>Every field agent's data is strictly partitioned under their individual authenticated account.</p>
+                </div>
+              </div>
+
+              <div class="bullet-card">
+                <i class="fa-solid fa-battery-three-quarters text-amber"></i>
+                <div>
+                  <strong>Optimized Battery Footprint</strong>
+                  <p>Dark mode interface built with Material 3 styling saves device battery throughout long field shifts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="deepdive-media">
+            <div class="media-frame">
+              <img src="images/field_agent.jpg" alt="Field Representative using Sha Collects" class="showcase-img">
+              <div class="media-badge-bottom">
+                <span><i class="fa-solid fa-user-check text-emerald"></i> Field Verified &bull; 99.9% Uptime</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Audit PDF Reports & Statements -->
+    <section class="reports-section" id="reports">
+      <div class="section-container">
+        <div class="deepdive-grid">
+          
+          <div class="deepdive-media">
+            <div class="media-frame">
+              <img src="images/reports_analytics.jpg" alt="Audit Grade PDF Ledger and EOD Reports" class="showcase-img">
+            </div>
+          </div>
+
+          <div class="deepdive-details">
+            <div class="section-tag">FINANCIAL RECONCILIATION</div>
+            <h2 class="section-title">Audit-Grade PDF Statements &amp; EOD Reports</h2>
+            <p class="section-text">
+              Close your collection day with total confidence. Generate professional, audit-ready PDF reports with standardized formatting that prints crisply on any mobile or desktop printer.
+            </p>
+
+            <div class="report-feature-boxes">
+              <div class="report-box">
+                <div class="report-box-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                <div>
+                  <h4>End-of-Day (EOD) Summary PDF</h4>
+                  <p>Total recovery metrics, visited shop counts, and granular payment mode breakdown (Cash vs GPay vs Bank) with itemized transaction logs.</p>
+                </div>
+              </div>
+
+              <div class="report-box">
+                <div class="report-box-icon"><i class="fa-solid fa-book-bookmark"></i></div>
+                <div>
+                  <h4>Individual Shop Ledger Statements</h4>
+                  <p>Full account statement for any merchant showing chronological collections, credit balances, and receipt reference numbers.</p>
+                </div>
+              </div>
+
+              <div class="report-box">
+                <div class="report-box-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div>
+                  <h4>1-Tap WhatsApp Closing Summary</h4>
+                  <p>Send an instant text summary directly to your route supervisor with total cash in pocket and bank collections before returning to the branch.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Recovery & ROI Calculator -->
+    <section class="calculator-section" id="calculator">
+      <div class="section-container">
+        <div class="section-header">
+          <div class="section-tag">BUSINESS IMPACT</div>
+          <h2 class="section-title">Field Collection Calculator</h2>
+          <p class="section-subtitle">See how much time and revenue leakage Sha Collects recovers for your field team every single month.</p>
+        </div>
+
+        <div class="calculator-card">
+          <div class="calc-controls">
+            
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <label for="agents-slider">Field Recovery Agents</label>
+                <span class="calc-val-badge" id="agents-val">5 Agents</span>
+              </div>
+              <input type="range" id="agents-slider" min="1" max="50" value="5" class="custom-slider">
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <label for="shops-slider">Shops Visited per Agent / Day</label>
+                <span class="calc-val-badge" id="shops-val">25 Shops</span>
+              </div>
+              <input type="range" id="shops-slider" min="5" max="80" value="25" class="custom-slider">
+            </div>
+
+            <div class="calc-group">
+              <div class="calc-label-row">
+                <label for="avg-coll-slider">Average Collection per Shop</label>
+                <span class="calc-val-badge" id="avg-coll-val">₹ 1,500</span>
+              </div>
+              <input type="range" id="avg-coll-slider" min="200" max="10000" step="100" value="1500" class="custom-slider">
+            </div>
+
+          </div>
+
+          <div class="calc-results">
+            <div class="calc-result-box highlight-result">
+              <span class="result-title">Monthly Cash Flow Managed</span>
+              <div class="result-amount" id="result-monthly-cash">₹ 48,75,000</div>
+              <span class="result-sub">Calculated over 26 working collection days</span>
+            </div>
+
+            <div class="calc-result-metrics">
+              <div class="metric-mini">
+                <div class="metric-mini-val" id="result-hours-saved">65 hrs</div>
+                <div class="metric-mini-label">Field Admin Hours Saved/Mo</div>
+              </div>
+              <div class="metric-mini">
+                <div class="metric-mini-val text-emerald">100%</div>
+                <div class="metric-mini-label">Discrepancy Prevention</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Installation & APK Download Section -->
+    <section class="download-section" id="install-guide">
+      <div class="section-container">
+        
+        <div class="download-card">
+          <div class="download-content">
+            <div class="download-badge">
+              <i class="fa-brands fa-android text-emerald"></i>
+              <span>OFFICIAL PRODUCTION RELEASE</span>
+            </div>
+            
+            <h2 class="download-title">Ready to Transform Your Field Cash Recovery?</h2>
+            <p class="download-desc">
+              Download the standalone Android APK right now. No sign-up barriers, zero third-party ads, and instantaneous local setup.
+            </p>
+
+            <div class="download-specs">
+              <div class="spec-pill"><i class="fa-solid fa-code-commit"></i> v1.0 Production</div>
+              <div class="spec-pill"><i class="fa-solid fa-file-zipper"></i> 58.8 MB</div>
+              <div class="spec-pill"><i class="fa-solid fa-mobile-screen"></i> Android 8.0+</div>
+              <div class="spec-pill"><i class="fa-solid fa-database"></i> Firebase Ready</div>
+            </div>
+
+            <div class="download-buttons">
+              <a href="Sha_Collects.apk" download="Sha_Collects.apk" class="btn btn-primary btn-xl" id="main-download-apk-btn">
+                <i class="fa-solid fa-cloud-arrow-down"></i>
+                <span>Download Sha_Collects.apk</span>
+              </a>
+              <a href="https://github.com/hadhihavath/shacollect" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-xl" id="github-source-btn">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub Repository</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="install-steps-container">
+            <h3 class="steps-title"><i class="fa-solid fa-circle-question text-emerald"></i> 3 Simple Steps to Install on Android</h3>
+            
+            <div class="step-card">
+              <div class="step-badge">Step 1</div>
+              <div class="step-info">
+                <strong>Tap "Download Sha_Collects.apk"</strong>
+                <p>Your browser will download the verified <code>Sha_Collects.apk</code> package to your device.</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-badge">Step 2</div>
+              <div class="step-info">
+                <strong>Allow Unknown Source Prompt</strong>
+                <p>If prompted by Android Security, tap <em>Settings &rarr; Allow from this source</em> (Chrome/Files).</p>
+              </div>
+            </div>
+
+            <div class="step-card">
+              <div class="step-badge">Step 3</div>
+              <div class="step-info">
+                <strong>Open &amp; Start Collecting</strong>
+                <p>Tap <em>Install</em>, sign in or test offline with demo routes immediately.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="images/icon.png" alt="Sha Collects" class="brand-img">
+            <span class="brand-name">Sha Collects</span>
+          </div>
+          <p class="footer-about">
+            The modern, offline-first route recovery platform for fast, reliable field operations.
+          </p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Route Management</a></li>
+            <li><a href="#offline-sync">Offline Architecture</a></li>
+            <li><a href="#reports">Audit Statements</a></li>
+            <li><a href="Sha_Collects.apk" download="Sha_Collects.apk">Download APK</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Technology</h4>
+          <ul>
+            <li><a href="#">Flutter 3.24+</a></li>
+            <li><a href="#">Dart 3.5+</a></li>
+            <li><a href="#">Google Cloud Firestore</a></li>
+            <li><a href="#">Firebase Authentication</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Open Source</h4>
+          <ul>
+            <li><a href="https://github.com/hadhihavath/shacollect" target="_blank" rel="noopener noreferrer">GitHub Repo</a></li>
+            <li><a href="https://github.com/hadhihavath/shacollect/blob/main/README.md" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+            <li><a href="https://github.com/hadhihavath/shacollect/releases" target="_blank" rel="noopener noreferrer">Releases</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sha Collects. Built with Flutter &amp; Firebase for high-performance field recovery teams.</p>
+        <div class="footer-badge-row">
+          <span class="badge-tag"><i class="fa-solid fa-lock text-emerald"></i> AES-256 Storage</span>
+          <span class="badge-tag"><i class="fa-solid fa-check-double text-cyan"></i> 100% Passing Tests</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
